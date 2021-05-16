@@ -32,11 +32,21 @@ class AuthService {
     }
   }
 
+  
+
 
   // sign in with emial & password
 
   // register in with emial & password
 
   // sign out
+  Future signOut() async{
+    try{
+        return await _auth.signOut();
+    } catch (e){
+      print(e.toString());
+      return null;
+    }
+  }
 
 }
