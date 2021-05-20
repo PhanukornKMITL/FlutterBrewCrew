@@ -30,7 +30,6 @@ class _SettingsFormState extends State<SettingsForm> {
     return StreamBuilder<UserData>(
       stream: DatabaseService(uid: user.uid).userData,
       builder: (context, snapshot) {
-        
         if(snapshot.hasData){
           UserData userData = snapshot.data;
           return SingleChildScrollView(

@@ -23,12 +23,8 @@ class DatabaseService{
     return UserData(
      uid: uid,
      name: snapshot.get('name'),
-     sugars: snapshot.get('sugars'),
+     sugars: snapshot.get('sugar'),
      strength: snapshot.get('strength'),
-
-
-  
-
     );
   }
 
